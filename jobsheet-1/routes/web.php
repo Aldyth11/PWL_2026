@@ -18,6 +18,8 @@ Route::get('/about', [AboutController::class, 'index']);
 Route::get('/articles/{id}', [ArticleController::class, 'index']);
 Route::resource('photos', PhotoController::class);
 
+Route::get('/greeting', [WelcomeController::class, 'greeting']);
+
 // Route::get('/user/{name}', function ($name) {
 //     return 'Nama saya ' . $name;
 // });
