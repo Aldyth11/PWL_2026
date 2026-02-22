@@ -15,3 +15,9 @@
 ![alt text](ss/image-4.png)
 ![alt text](ss/image-5.png)
 ![alt text](ss/image-6.png)
+
+### Praktikum 2: Membuat Controller
+![](ss/SS_2026-02-20-20-29-13.png)
+![](ss/SS_2026-02-22-07-21-00.png)
+![](ss/SS_2026-02-22-07-20-01.png)
+![](ss/SS_2026-02-22-07-50-38.png)
