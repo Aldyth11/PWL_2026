@@ -2,7 +2,7 @@
 
 ## 1. Halaman Home / Landing Page
 
-![Halaman Home](image.png)
+![Halaman Home](img/image.png)
 
 **Route:** `GET /`  
 **Controller:** `HomeController@index`  
@@ -17,7 +17,7 @@
 
 ## 2. Halaman Produk - Food & Beverage
 
-![Kategori Food & Beverage](image-1.png)
+![Kategori Food & Beverage](img/image-1.png)
 
 **Route:** `GET /category/food-beverage`  
 **Controller:** `ProductController@foodBeverage`  
@@ -32,7 +32,7 @@
 
 ## 3. Halaman Produk - Beauty & Health
 
-![Kategori Beauty & Health](image-2.png)
+![Kategori Beauty & Health](img/image-2.png)
 
 **Route:** `GET /category/beauty-health`  
 **Controller:** `ProductController@beautyHealth`  
@@ -47,7 +47,7 @@
 
 ## 4. Halaman Produk - Home Care
 
-![Kategori Home Care](image-3.png)
+![Kategori Home Care](img/image-3.png)
 
 **Route:** `GET /category/home-care`  
 **Controller:** `ProductController@homeCare`  
@@ -62,7 +62,7 @@
 
 ## 5. Halaman Produk - Baby & Kid
 
-![Kategori Baby & Kid](image-4.png)
+![Kategori Baby & Kid](img/image-4.png)
 
 **Route:** `GET /category/baby-kid`  
 **Controller:** `ProductController@babyKid`  
@@ -77,7 +77,7 @@
 
 ## 6. Halaman User Profile
 
-![User Profile](image-5.png)
+![User Profile](img/image-5.png)
 
 **Route:** `GET /user/{id}/name/{name}`  
 **Controller:** `UserController@show`  
@@ -92,7 +92,7 @@
 
 ## 7. Halaman Penjualan (Sales)
 
-![Halaman Sales](image-6.png)
+![Halaman Sales](img/image-6.png)
 
 **Route:** `GET /sales`  
 **Controller:** `SalesController@index`  
