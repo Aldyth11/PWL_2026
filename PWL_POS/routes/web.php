@@ -8,6 +8,7 @@ use App\Http\Controllers\SalesController;
 use App\Http\Controllers\LevelController;
 use App\Http\Controllers\KategoriController;
 
+
 // 1. Halaman Home
 Route::get('/', [HomeController::class, 'index']);
 
@@ -19,8 +20,8 @@ Route::prefix('category')->group(function () {
     Route::get('/baby-kid', [ProductController::class, 'babyKid']);
 });
 
-// 3. Halaman User (Route Param)
-Route::get('/user/{id}/name/{name}', [UserController::class, 'show']);
+// 3. Halaman User
+Route::get('/user', [UserController::class, 'index']);
 
 // 4. Halaman Penjualan
 Route::get('/sales', [SalesController::class, 'index']);
