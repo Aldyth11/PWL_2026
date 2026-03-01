@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\SalesController;
+use App\Http\Controllers\LevelController;
 
 // 1. Halaman Home
 Route::get('/', [HomeController::class, 'index']);
@@ -22,3 +23,6 @@ Route::get('/user/{id}/name/{name}', [UserController::class, 'show']);
 
 // 4. Halaman Penjualan
 Route::get('/sales', [SalesController::class, 'index']);
+
+// 5. Halaman Level
+Route::get('/level', [LevelController::class, 'index']);
