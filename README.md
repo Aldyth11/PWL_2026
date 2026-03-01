@@ -10,4 +10,5 @@ Repository ini berisi dokumentasi dan laporan praktikum mata kuliah Pemrograman 
 ## Laporan Praktikum
 - [Week 1 - Inisialisasi Project Laravel](./jobsheet-1/Report/Week%201/)
 - [Week 2 - Routing, Controller, dan View](./jobsheet-1/Report/Week%202/README.md)
-- [Week 2 - Tugas POS](./PWL_POS/Report/README.md)
+- [Week 2 - Tugas POS](./PWL_POS/Report/Week%202/README.md)
+- [Week 3 - MIGRATION, SEEDER, DB FAÇADE, QUERY BUILDER, dan ELOQUENT ORM](./PWL_POS/Report/Week%203/README.md)
