@@ -10,25 +10,20 @@ class UserController extends Controller
 {
     public function index()
     {
-        // tambah data user dengan Eloquent Model
-        // $data = [
-        //     'level_id' => 2,
-        //     'username' => 'manager_tiga',
-        //     'nama' => 'Manager 3',
-        //     'password' => Hash::make('12345'),
-        // ];
-        // UserModel::create($data); // tambah data user
+        $user = UserModel::create([
+            'username' => 'manager11',
+            'nama' => 'Manager11',
+            'password' => Hash::make('12345'),
+            'level_id' => 2,
+        ]);
 
-        $user = UserModel::firstOrNew(
-            [
-                'username' => 'manager33',
-                'nama' => 'Manager Tiga Tiga',
-                'password' => Hash::make('12345'),
-                'level_id' => 2
-            ],
-        );
-        $user->save(); // Simpan data user ke database
+        $user->username = 'manager12';
+        $user->save();
 
-        return view('user', ['data' => $user]);
+        $user->wasChanged(); // true
+        $user->wasChanged('username'); // true
+        $user->wasChanged(['username', 'level_id']); // true
+        $user->wasChanged('nama'); // false
+        dd($user ->wasChanged(['nama', 'username'])); // true
     }
 }
