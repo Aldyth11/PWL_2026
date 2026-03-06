@@ -12,3 +12,4 @@ Repository ini berisi dokumentasi dan laporan praktikum mata kuliah Pemrograman 
 - [Week 2 - Routing, Controller, dan View](./jobsheet-1/Report/Week%202/README.md)
 - [Week 2 - Tugas POS](./PWL_POS/Report/Week%202/README.md)
 - [Week 3 - MIGRATION, SEEDER, DB FAÇADE, QUERY BUILDER, dan ELOQUENT ORM](./PWL_POS/Report/Week%203/README.md)
+- [Week 4 - MODEL dan ELOQUENT ORM](./PWL_POS/Report/Week%204/README.md)
