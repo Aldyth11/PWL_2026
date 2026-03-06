@@ -31,3 +31,18 @@ Route::get('/level', [LevelController::class, 'index']);
 
 // 6. Halaman Kategori
 Route::get('/kategori', [KategoriController::class, 'index']);
+
+// 7. Halaman Tambah User
+Route::get('/user/tambah', [UserController::class, 'tambah']);
+
+// 8. Halaman Simpan Tambah User
+Route::post('/user/tambah/simpan', [UserController::class, 'tambah_simpan']);
+
+// 9. Halaman Ubah User
+Route::get('/user/ubah/{id}', [UserController::class, 'ubah']);
+
+// 10. Halaman Simpan Ubah User
+Route::put('/user/ubah/simpan/{id}', [UserController::class, 'ubah_simpan']);
+
+// 11. Halaman Hapus User
+Route::get('/user/hapus/{id}', [UserController::class, 'hapus']);
