@@ -17,3 +17,4 @@ Repository ini berisi dokumentasi dan laporan praktikum mata kuliah Pemrograman 
 - [Week 4 - MODEL dan ELOQUENT ORM](./PWL_POS/Report/Week%204/README.md)
 - [Week 5 - Relasi Database dan Relationship Model](./PraktikumPWL/Report/Week%205/README.md)
 - [Week 6 - Form Elements, Validation & Layout di Filament](./PraktikumPWL/Report/Week%206/README.md)
+- [Week 7 - Wizard Form, Info List & Tabs di Filament](./PraktikumPWL/Report/Week%207/README.md)
