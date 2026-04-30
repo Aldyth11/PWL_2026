@@ -22,7 +22,7 @@ class PostsTable
                 ColorColumn::make('color'),
                 TextColumn::make('published_at')->dateTime()->label('Published At')->sortable(),
                 ImageColumn::make('image')->disk('public')->label('Image'),
-            ])
+            ])->defaultSort('published_at', 'asc')
             ->filters([
                 //
             ])

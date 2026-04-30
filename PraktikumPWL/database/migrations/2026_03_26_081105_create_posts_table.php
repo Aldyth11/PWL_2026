@@ -21,7 +21,7 @@ return new class extends Migration
             $table->text('body')->nullable();
             $table->json('tags')->nullable();
             $table->boolean('published')->default(false);
-            $table->date('published_at')->nullable();
+            $table->datetime('published_at')->nullable();
             $table->timestamps();
         });
     }
