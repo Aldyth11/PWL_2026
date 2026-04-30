@@ -19,3 +19,4 @@ Repository ini berisi dokumentasi dan laporan praktikum mata kuliah Pemrograman 
 - [Week 6 - Form Elements, Validation & Layout di Filament](./PraktikumPWL/Report/Week%206/README.md)
 - [Week 7 - Wizard Form, Info List & Tabs di Filament](./PraktikumPWL/Report/Week%207/README.md)
 - [Week 10 - Sorting, Filtering & Pagination pada Table Filament](./PraktikumPWL/Report/Week%2010/README.md)
+- [Week 11 - Implementasi Search & Filter pada Table Filament](./PraktikumPWL/Report/Week%2011/README.md)
