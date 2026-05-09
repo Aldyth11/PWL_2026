@@ -12,6 +12,7 @@ use Filament\Tables\Columns\imageColumn;
 use Filament\Tables\Filters\Filter;
 use Filament\Forms\Components\DatePicker;
 use Filament\Tables\Filters\SelectFilter;
+use Filament\Tables\Columns\IconColumn;
 
 class PostsTable
 {
@@ -20,22 +21,28 @@ class PostsTable
         return $table
             ->columns([
                 //
-                TextColumn::make('title')->searchable()->sortable(),
-                TextColumn::make('slug')->searchable()->sortable(),
-                TextColumn::make('category.name')->label('Category')->searchable()->sortable(),
-                ColorColumn::make('color'),
-                TextColumn::make('published_at')->dateTime()->label('Published At')->sortable(),
-                ImageColumn::make('image')->disk('public')->label('Image'),
-            ])->defaultSort('published_at', 'asc')
+                TextColumn::make('id')->label('ID')->sortable()->toggleable(isToggledHiddenByDefault: true),
+                TextColumn::make('title')->searchable()->sortable()->toggleable(),
+                TextColumn::make('slug')->searchable()->sortable()->toggleable(),
+                TextColumn::make('category.name')->label('Category')->searchable()->sortable()->toggleable(),
+                ColorColumn::make('color')->toggleable(),
+                ImageColumn::make('image')->disk('public')->label('Image')->toggleable(),
+                TextColumn::make('created_at')->dateTime()->label('Created At')->sortable()->toggleable(),
+                TextColumn::make('tags')->label('Tags')->toggleable(isToggledHiddenByDefault: true),
+                IconColumn::make('published')
+                    ->boolean()
+                    ->label('Published')
+                    ->sortable(),
+            ])->defaultSort('created_at', 'asc')
             ->filters([
-                Filter::make('published_at')
+                Filter::make('created_at')
                     ->form([
-                        DatePicker::make('published_at')->label('Published From'),
+                        DatePicker::make('created_at')->label('Created From'),
                     ])
                     ->query(function ($query, $data) {
                     return $query->when(
-                        $data['published_at'],
-                        fn ($query, $date) => $query->whereDate('published_at', $date)
+                        $data['created_at'] ?? null,
+                        fn ($query, $date) => $query->whereDate('created_at', $date)
                     );
                 }),
                 SelectFilter::make('category_id')

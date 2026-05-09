@@ -44,7 +44,7 @@ class PostForm
                                     ->searchable(),
                                 ColorPicker::make('color')->required(),
                             ])->columns(2),
-                        MarkdownEditor::make('content')->required(),
+                        MarkdownEditor::make('content'),
                     ])
                     ->columnSpan(2),
 
@@ -67,7 +67,7 @@ class PostForm
                             ->icon('heroicon-o-information-circle')
                             ->schema([
                                 TagsInput::make('tags'),
-                                Checkbox::make('is_published')->label('Published'),
+                                Checkbox::make('published')->label('Published'),
                                 DateTimePicker::make('published_at')
                                     ->format('Y-m-d H:i:s')
                                     ->label('Publish Date'),
