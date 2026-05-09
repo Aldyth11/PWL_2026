@@ -21,3 +21,4 @@ Repository ini berisi dokumentasi dan laporan praktikum mata kuliah Pemrograman 
 - [Week 10 - Sorting, Filtering & Pagination pada Table Filament](./PraktikumPWL/Report/Week%2010/README.md)
 - [Week 11 - Implementasi Search & Filter pada Table Filament](./PraktikumPWL/Report/Week%2011/README.md)
 - [Week 12 - Implementasi Toggle Column pada Table Filament](./PraktikumPWL/Report/Week%2012/README.md)
+- [Week 13 - Implementasi Table Actions & Custom Action di Filament](./PraktikumPWL/Report/Week%2013/README.md)
